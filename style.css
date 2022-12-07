@@ -1,0 +1,265 @@
+* {
+    padding: 0;
+    margin: 0 auto;
+    font-family: "Century Gothic ", sans-serif;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    background-color:rgb(93, 187, 167);
+    padding: 35px 0;
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.header.ds-fixed-header {
+    padding: 20px 0;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: rgb(93, 187, 167);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    color:rgb(48, 150, 128);
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    margin-right: 12px;
+}
+
+.logo:hover {
+    color: #000;
+}
+
+.btn-primary
+{
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color:rgb(93, 187, 167);
+}
+nav {
+    margin-top: 120px;
+    list-style-type: none;
+    display: flex;
+    max-width: 1080px;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+main {
+    max-width: 1080px;
+    background-color: #ffffff;
+}
+
+nav li {
+    padding: 10px 20px;
+}
+
+
+nav i {
+    margin-right: 5px;
+}
+
+nav li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+section {
+    padding: 20px;
+}
+.form-group{
+    display: block;
+    width: 98%;
+    padding: 1%;
+}
+div.about {
+    display: flex;
+}
+
+.about .photo {
+    align-self: flex-start;
+    flex-grow: 1;
+    
+}
+
+.about .info {
+    margin-left: 10px;
+    flex-grow: 2;
+}
+
+div.about .info_row {
+    text-transform: uppercase;
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.info_col {
+    display: flex;
+}
+
+.info_row .title {
+    font-weight: bold;
+}
+.footer-before
+{
+    margin-top: 100px; 
+}
+
+.footer-distributed {
+    width: 100%;
+    display: inline-block;
+    text-decoration: underline;
+    background-color: rgb(93, 187, 167);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    text-align: center;
+    font: normal 16px sans-serif;
+    padding: 45px 50px;
+}
+
+.footer-distributed .footer-left p {
+    color: #000000;
+    font-size: 14px;
+    margin: 0;
+    text-decoration: none;
+}
+
+
+.footer-distributed p.footer-links {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    margin: 0 0 10px;
+    padding: 0;
+    transition: ease .25s;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.footer-distributed p.footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+    transition: ease .25s;
+}
+
+.footer-distributed .footer-links a:before {
+    content: "  ";
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+    content: none;
+}
+.footer-distributed p.footer-links p{
+    text-decoration: none;
+}
+
+/* Media Queries */
+
+@media (min-width: 1025px) { }
+@media (max-width: 767px) { 
+    div.about {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .info_row .title {
+        width: 90%;
+        padding: 1%;
+        font-size: 70%;
+    }
+    ul{
+        width: 90%;
+        padding: 1%;
+        font-size: 70%;
+    }
+    h1, h2
+    {
+        font-size: 70%;
+    }
+    nav {
+        margin-top: 30%;
+        list-style-type: none;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    .footer-before
+    {
+        margin-top:30px; 
+    }
+    main{
+        background-color: #fff;
+    }
+    .footer-distributed .footer-left, .footer-distributed .footer-right {
+        text-align: center;
+    }
+    .footer-distributed .footer-right {
+        float: none;
+        margin: 0 auto 20px;
+    }
+    .footer-distributed .footer-left p.footer-links {
+        line-height: 1.8;
+    }
+}
